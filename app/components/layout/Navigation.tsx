@@ -68,9 +68,9 @@ const Navigation: React.FC = () => {
             className="font-heading text-lg sm:text-xl lg:text-2xl font-bold flex-shrink-0"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="text-slate-800">Your</span>
+            <span className="text-slate-800">Rakesh </span>
             <span className="bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
-              Name
+              Paramanick
             </span>
           </motion.div>
 
@@ -86,7 +86,7 @@ const Navigation: React.FC = () => {
                     : 'text-slate-600 hover:text-primary-600'
                 }`}
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                
               >
                 {item.label}
                 {activeSection === item.href.substring(1) && (

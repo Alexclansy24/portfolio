@@ -17,7 +17,7 @@ export interface BlogPost {
 
 export interface Skill {
   name: string;
-  category: 'Frontend' | 'Backend' | 'Tools';
+  category: 'Framework'|'Frontend' | 'Backend' | 'Tools' | 'Database';
 }
 
 export interface ContactForm {
@@ -43,6 +43,7 @@ export interface Project {
   category?: string;
   year?: string;
   status?: 'Completed' | 'In Progress' | 'Planning';
+  
 }
 
 // ... rest of your existing types

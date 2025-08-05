@@ -64,9 +64,9 @@ const ContactSection: React.FC = () => {
   };
 
   const socialLinks = [
-    { icon: 'fab fa-linkedin', label: 'LinkedIn', url: '#' },
-    { icon: 'fab fa-github', label: 'GitHub', url: '#' },
-    { icon: 'fab fa-twitter', label: 'Twitter', url: '#' },
+    { icon: 'fab fa-linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/rakesh-paramanick-551a78229/' },
+    { icon: 'fab fa-github', label: 'GitHub', url: 'https://github.com/Alexclansy24' },
+    { icon: 'fab fa-twitter', label: 'Twitter', url: 'https://x.com/syncwithRakesh' },
   ];
 
   return (
@@ -98,8 +98,8 @@ const ContactSection: React.FC = () => {
               {/* Contact Methods */}
               <div className="space-y-6">
                 {[
-                  { icon: 'fas fa-envelope', label: 'Email', value: 'your.email@example.com' },
-                  { icon: 'fas fa-phone', label: 'Phone', value: '+1 (555) 123-4567' },
+                  { icon: 'fas fa-envelope', label: 'Email', value: 'rakeshparamanick24@gmail.com' },
+                  { icon: 'fas fa-phone', label: 'Phone', value: '+91-9763348661' },
                 ].map((contact, index) => (
                   <motion.div
                     key={contact.label}
@@ -130,6 +130,7 @@ const ContactSection: React.FC = () => {
                   <motion.a
                     key={social.label}
                     href={social.url}
+                    target='_blank'
                     className="flex items-center gap-3 px-4 py-3 bg-white text-slate-600 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-primary-500 hover:to-primary-600 hover:text-white group"
                     whileHover={{ scale: 1.05, y: -3 }}
                     whileTap={{ scale: 0.95 }}
@@ -244,7 +245,7 @@ const ContactSection: React.FC = () => {
       {/* Notification */}
       {notification && (
         <motion.div
-          className={`fixed top-6 right-6 p-4 rounded-2xl shadow-lg z-50 max-w-sm ${
+          className={`fixed top-25 right-6 p-4 rounded-2xl shadow-lg z-50 max-w-sm ${
             notification.type === 'success' 
               ? 'bg-gradient-to-r from-green-500 to-green-600 text-white' 
               : notification.type === 'error'

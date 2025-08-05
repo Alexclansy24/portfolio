@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative bg-gradient-to-br from-slate-50/80 to-slate-100/80 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mt-25 md:mt-0">
           {/* Text Content */}
           <div className="space-y-8 z-10 relative">
             <motion.div
@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <span className="block text-slate-500 text-2xl lg:text-3xl">Creative</span>
+                
                 <span className="block bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
                   {displayText}
                   <span className="animate-pulse">|</span>
@@ -103,11 +103,11 @@ const HeroSection: React.FC = () => {
               {/* Let's Talk Button - Fixed */}
               <motion.button
                 onClick={() => scrollToSection('contact')}
-                className="group relative px-8 py-4 bg-white border-2 border-primary-500 text-primary-600 rounded-2xl font-semibold overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group relative px-8 py-4 bg-white border-2 border-primary-500 text-primary-600 hover:bg-primary-600 rounded-2xl font-semibold overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+                <span className="relative z-10 flex items-center gap-2 group-hover:text-white  transition-colors duration-300">
                    Let&apos;s Talk
                   <motion.i 
                     className="fas fa-comment-dots"

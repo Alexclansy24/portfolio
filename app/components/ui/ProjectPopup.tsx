@@ -42,10 +42,8 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({ project, isOpen, onClose })
     }
   };
 
-  const handleProjectClick = (url: string, type: 'live' | 'github') => {
-    console.log(`Opening ${type} demo for ${url}`);
-    // In real implementation, you would open the actual URL
-    // window.open(url, '_blank');
+  const handleProjectClick = (url: string) => {     
+     window.open(url, '_blank');
   };
 
   return (
@@ -247,6 +245,7 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({ project, isOpen, onClose })
                 </motion.div>
 
                 {/* Features Section */}
+                {project.featured && (
                 <motion.div
                   initial={{ y: 30, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -281,27 +280,7 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({ project, isOpen, onClose })
                     ))}
                   </div>
                 </motion.div>
-
-                {/* Project Stats */}
-                <motion.div
-                  initial={{ y: 30, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 1.1 }}
-                  className="grid grid-cols-3 gap-6"
-                >
-                  <div className="text-center p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl border border-blue-200/50">
-                    <div className="text-3xl font-bold text-blue-600 font-heading mb-2">95%</div>
-                    <div className="text-blue-700 text-sm font-medium">Performance Score</div>
-                  </div>
-                  <div className="text-center p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-2xl border border-green-200/50">
-                    <div className="text-3xl font-bold text-green-600 font-heading mb-2">100%</div>
-                    <div className="text-green-700 text-sm font-medium">Accessibility</div>
-                  </div>
-                  <div className="text-center p-6 bg-gradient-to-r from-purple-50 to-purple-100 rounded-2xl border border-purple-200/50">
-                    <div className="text-3xl font-bold text-purple-600 font-heading mb-2">A+</div>
-                    <div className="text-purple-700 text-sm font-medium">Security Rating</div>
-                  </div>
-                </motion.div>
+                )}
 
                 {/* Action Buttons */}
                 <motion.div
@@ -311,7 +290,7 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({ project, isOpen, onClose })
                   transition={{ delay: 1.2 }}
                 >
                   <motion.button
-                    onClick={() => handleProjectClick(project.liveUrl || '#', 'live')}
+                    onClick={() => project.liveUrl && handleProjectClick(project.liveUrl)}
                     className="flex-1 min-w-[200px] flex items-center justify-center gap-3 py-4 px-6 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
@@ -321,7 +300,7 @@ const ProjectPopup: React.FC<ProjectPopupProps> = ({ project, isOpen, onClose })
                   </motion.button>
                   
                   <motion.button
-                    onClick={() => handleProjectClick(project.githubUrl || '#', 'github')}
+                    onClick={() => project.githubUrl && handleProjectClick(project.githubUrl)}
                     className="flex-1 min-w-[200px] flex items-center justify-center gap-3 py-4 px-6 bg-slate-800 text-white rounded-2xl font-semibold text-lg hover:bg-slate-700 transition-colors shadow-lg"
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}

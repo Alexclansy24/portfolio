@@ -10,25 +10,22 @@ const AboutSection: React.FC = () => {
   const [animatedStats, setAnimatedStats] = useState({ projects: 0, years: 0, clients: 0 });
 
   const skills: Skill[] = [
+    { name: 'Next.js', category: 'Framework' },
+    { name: 'Express.js', category: 'Framework' },
     { name: 'React', category: 'Frontend' },
-    { name: 'Vue.js', category: 'Frontend' },
-    { name: 'JavaScript', category: 'Frontend' },
     { name: 'TypeScript', category: 'Frontend' },
     { name: 'Node.js', category: 'Backend' },
-    { name: 'Python', category: 'Backend' },
-    { name: 'MongoDB', category: 'Backend' },
-    { name: 'PostgreSQL', category: 'Backend' },
-    { name: 'Docker', category: 'Tools' },
-    { name: 'AWS', category: 'Tools' },
+    { name: 'MongoDB', category: 'Database' },
+    { name: 'MySql', category: 'Database' },
     { name: 'Git', category: 'Tools' },
     { name: 'Figma', category: 'Tools' },
   ];
 
-  const skillCategories = ['Frontend', 'Backend', 'Tools'] as const;
+  const skillCategories = ['Framework', 'Frontend', 'Backend', 'Tools', 'Database'] as const;
   const stats = useMemo(() => [
-    { label: 'Projects', value: 50, key: 'projects' as keyof typeof animatedStats },
-    { label: 'Years', value: 3, key: 'years' as keyof typeof animatedStats },
-    { label: 'Clients', value: 25, key: 'clients' as keyof typeof animatedStats },
+    { label: 'Projects', value: 3, key: 'projects' as keyof typeof animatedStats },
+    { label: 'Years', value: 1, key: 'years' as keyof typeof animatedStats },
+    { label: 'Clients', value: 2, key: 'clients' as keyof typeof animatedStats },
   ], []);
 
   useEffect(() => {
@@ -81,14 +78,19 @@ const AboutSection: React.FC = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <p>
-                I&apos;m a passionate creator who believes in the perfect fusion of art and technology. 
-                With 3+ years of experience, I transform complex ideas into beautiful, functional digital experiences.
-              </p>
-              <p>
-                My approach combines technical expertise with creative vision, ensuring every project 
-                tells a unique story through code.
-              </p>
+              <p>Dedicated Problem Solver and Digital Innovator with a proven commitment to transforming complex challenges into elegant, user-centered solutions. Currently advancing expertise through formal education while building a track record of delivering reliable, high-quality digital experiences that exceed expectations.</p>
+                <h2><b>Reliability First:</b></h2> 
+                <p>Consistently deliver projects on time with meticulous attention to detail and long-term maintainability</p>
+                <h2><b>User-Centered Thinking:</b></h2>
+                <p>Prioritize genuine user needs and experiences over technical complexity, ensuring solutions that truly serve their intended purpose</p>
+                <h2><b>Continuous Growth:</b></h2>
+                <p>Embrace challenges as opportunities to expand capabilities and deliver increasingly sophisticated solutions</p>
+                <h2><b>Collaborative Spirit:</b></h2>
+                <p>Foster trust through transparent communication, active listening, and a genuine commitment to shared success</p>
+                <h2><b>What Sets Me Apart:</b></h2>
+                <p>I believe technology should empower, not complicate. My approach combines analytical thinking with creative problem-solving to build solutions that not only work flawlessly today but adapt and scale for tomorrow&rsquo;s needs. Whether developing comprehensive management systems or crafting intuitive user interfaces, I bring the same unwavering dedication to excellence and user satisfaction.</p>
+
+
             </motion.div>
 
             {/* Skills */}
