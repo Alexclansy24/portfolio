@@ -78,7 +78,7 @@ const AboutSection: React.FC = () => {
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <p>Dedicated Problem Solver and Digital Innovator with a proven commitment to transforming complex challenges into elegant, user-centered solutions. Currently advancing expertise through formal education while building a track record of delivering reliable, high-quality digital experiences that exceed expectations.</p>
+              <p>Dedicated Problem Solver and Digital Innovator with a proven commitment to transforming complex challenges into elegant, user-centered solutions. Currently advancing expertise through formal education while building a track record of delivering reliable, high-quality digital experiences.</p>
                 <h2><b>Reliability First:</b></h2> 
                 <p>Consistently deliver projects on time with meticulous attention to detail and long-term maintainability</p>
                 <h2><b>User-Centered Thinking:</b></h2>
