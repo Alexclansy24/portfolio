@@ -156,7 +156,7 @@ export const sideQuests: SideQuest[] = [
   
 ];
 
-{/*export const posts: Post[] = [
+export const posts: Post[] = [
   {
     title: "What I learned from deleting 4,000 lines of CSS",
     date: "Sep 2026",
@@ -168,28 +168,5 @@ export const sideQuests: SideQuest[] = [
       "The lesson was not about CSS. It was that every line I add is a line someone has to understand later, including me. Now I write less, name things by purpose, and delete without ceremony.",
     ],
   },
-  {
-    title: "Shipping a small app every month for a year",
-    date: "Jun 2026",
-    readTime: "8 min read",
-    excerpt:
-      "Twelve tiny projects, three that mattered, and why finishing beats polishing.",
-    body: [
-      "At the start of the year I promised myself one finished project a month. Finished meant deployed, usable, and shown to at least one other person.",
-      "Most were forgettable. Three taught me something I could not have learned from a tutorial. The habit mattered more than any single project.",
-    ],
-  },
-  {
-    title: "Notes on reading other people's code",
-    date: "Feb 2026",
-    readTime: "5 min read",
-    excerpt:
-      "A short, practical routine for getting oriented in a codebase you did not write.",
-    body: [
-      "When I join a new codebase I follow one request from the browser to the database and back. It takes an hour and gives me a map I can add detail to for weeks.",
-      "I write down every question I have. Most answer themselves within a few days, and the rest become my first useful conversations with the team.",
-    ],
-    url: "https://example.com",
-  },
 ];
-*/}
+
