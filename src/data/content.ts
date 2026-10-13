@@ -44,12 +44,12 @@ export type Post = {
 export const profile = {
   name: "Rakesh Paramanick",
   profession: "Full-stack developer",
-  location: "Your City, Country",
-  email: "hello@example.com",
-  github: "https://github.com/your-handle",
-  linkedin: "https://www.linkedin.com/in/your-handle",
+  location: "Mumbai, India",
+  email: "rakeshparamanick24@gmail.com",
+  github: "https://github.com/Alexclansy24",
+  linkedin: "https://www.linkedin.com/in/rakesh-paramanick-551a78229/",
   // Drop your photo in /public and point to it here, e.g. "/profile.jpg"
-  photo: "/profile.svg",
+  photo: "/profile.jpeg",
   photoAlt: "Portrait of Rakesh Paramanick",
   siteDescription:
     "Portfolio of Rakesh Paramanick, a full-stack developer building quiet, well-made software.",

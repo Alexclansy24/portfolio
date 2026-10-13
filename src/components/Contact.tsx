@@ -51,13 +51,13 @@ export default function Contact() {
       <form onSubmit={onSubmit} className="max-w-xl space-y-8">
         <div>
           <label htmlFor="name" className="text-sm text-mute">
-            Rakesh Paramanick
+            Your name
           </label>
           <input id="name" name="name" type="text" required autoComplete="name" className={fieldClass} />
         </div>
         <div>
           <label htmlFor="email" className="text-sm text-mute">
-            rakeshparamanick24@gmail.com
+            Your email
           </label>
           <input id="email" name="email" type="email" required autoComplete="email" className={fieldClass} />
         </div>
