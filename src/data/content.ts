@@ -174,7 +174,7 @@ export const projects: Project[] = [
 {
   name: "E-Commerce Food Delivery Web App",
   tagline: "A full-stack food ordering platform with secure payments, order management, and delivery tracking.",
-  year: "2026",
+  year: "2024",
   description: [
     "Developed a full-stack food delivery web application that enables customers to browse food items, place orders, make online payments, and track order progress. Structured the project into three independent applications: a customer-facing frontend, an Express.js backend API, and an admin dashboard for managing food items and orders.",
     "Built the customer frontend using React, Vite, and React Router to support page navigation and food ordering workflows. Integrated Axios for API communication and implemented a responsive interface for browsing food items, managing orders, and accessing customer account features.",
@@ -186,6 +186,23 @@ export const projects: Project[] = [
   tech: ["React", "Vite", "JavaScript", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt", "Stripe", "Axios", "React Router", "Multer", "CORS", "dotenv", "Validator"],
   liveUrl: "https://food-delivery-frontend-ihvh.onrender.com/",
   githubUrl: "https://github.com/Alexclansy24/ecom",
+},
+{
+  name: "School Management Dashboard",
+  tagline: "A modern school dashboard for managing academics, attendance, schedules, and school activities.",
+  year: "2025",
+  description: [
+    "Designed and developed a responsive school management dashboard using Next.js, React, TypeScript, and Tailwind CSS, focusing on a clean interface, intuitive navigation, and organized presentation of academic information.",
+    "Created separate dashboard interfaces for administrators, parents, and students, tailoring the navigation, dashboard widgets, and information displayed to each user role. The project focuses on frontend UI development and uses mock data to demonstrate the intended user experience without a backend.",
+    "Designed attendance management screens to display attendance records, attendance summaries, and student attendance information through structured tables, status indicators, and dashboard statistics.",
+    "Built interactive timetable and academic schedule interfaces using calendar components to present class schedules, subjects, and upcoming academic activities in an organized calendar-based layout.",
+    "Developed UI screens for examination schedules, exam-related information, class management, announcements, and upcoming school events, helping users access important academic updates from a centralized dashboard.",
+    "Implemented data visualization components using Recharts to present attendance summaries and other academic statistics through charts and visual indicators. Used React Hook Form and Zod to structure form interfaces and demonstrate client-side input validation.",
+    "Integrated calendar libraries, reusable React components, and responsive layouts to create consistent dashboard experiences across different screen sizes. Prioritized visual hierarchy, component reusability, and maintainable frontend architecture."
+  ],
+  tech: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS", "React Big Calendar", "React Calendar", "Recharts", "React Hook Form", "Zod", "Moment.js"],
+  liveUrl: "",
+  githubUrl: "",
 },
   
 ];
