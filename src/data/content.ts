@@ -124,6 +124,69 @@ export const projects: Project[] = [
   liveUrl: "https://github-profile-finder-ten-lilac.vercel.app/",
   githubUrl: "https://github.com/Alexclansy24/github-profile-finder",
 },
+{
+  name: "Duplicate Image Finder",
+  tagline: "Find exact and visually similar images with perceptual hashing.",
+  year: "2026",
+  description: [
+    "Duplicate Image Finder is a local desktop application built with Python to identify and manage duplicate images on a computer. It scans selected directories, detects exact duplicates using SHA-256 hashing, and identifies visually similar images using perceptual hashing (pHash).",
+    "Implemented a two-stage duplicate detection system that groups identical files based on their SHA-256 hashes and detects near-duplicates using perceptual hash distances. Configurable similarity thresholds allow users to control how closely images must match to be considered duplicates.",
+    "Developed a graphical user interface using Tkinter to display scan results, organize duplicate groups, and simplify image management. Added functionality to open selected images, delete unwanted duplicates, and refresh results after file operations.",
+    "Implemented corrupted-image detection to identify files that cannot be processed correctly, helping users distinguish problematic images from valid files during scanning.",
+    "Built the application as a lightweight, offline utility without AI, cloud services, or external hosting. The project demonstrates practical image-processing algorithms, file-system operations, hashing techniques, and desktop application development."
+  ],
+  tech: ["Python", "Tkinter", "Pillow", "Perceptual Hashing (pHash)", "SHA-256", "Image Processing", "File System Operations"],
+  liveUrl: "",
+  githubUrl: "https://github.com/Alexclansy24/duplicate-image-finder",
+},
+{
+  name: "AI PDF Chatbot",
+  tagline: "Upload documents and ask questions to get context-aware answers from their content.",
+  year: "2026",
+  description: [
+    "AI PDF Chatbot is a full-stack application that allows authenticated users to upload PDF documents and interact with their content through natural-language questions. It uses retrieval-augmented generation (RAG) to retrieve relevant document passages and generate answers grounded in the uploaded content.",
+    "Built the frontend using Next.js, TypeScript, Tailwind CSS, Shadcn UI, TanStack Query, Axios, React Hook Form, and Zod. Implemented login and dashboard functionality, reusable UI components, and structured API communication to provide a responsive document-chat experience.",
+    "Developed a FastAPI backend with versioned REST endpoints, JWT-based authentication, and user-specific access control. Integrated PostgreSQL with Alembic migrations for persistent application data and implemented password authentication using Python-JOSE and Passlib.",
+    "Integrated Qdrant as the vector database to store and retrieve document embeddings based on semantic similarity. Combined vector retrieval with a large language model to generate context-aware responses using relevant document chunks.",
+    "Implemented local file storage through a dedicated storage provider abstraction, keeping document uploads on the local filesystem rather than relying on cloud object storage. Organized backend components to separate authentication, storage, database operations, and vector retrieval responsibilities.",
+    "Designed the application around a modular architecture that connects the frontend, FastAPI services, PostgreSQL, local document storage, Qdrant, and the language model into an end-to-end document question-answering workflow."
+  ],
+  tech: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "TanStack Query", "FastAPI", "Python", "PostgreSQL", "Alembic", "Qdrant", "RAG", "LLMs", "JWT", "Docker"],
+  liveUrl: "",
+  githubUrl: "https://github.com/Alexclansy24/pdf-chatbot",
+},
+{
+  name: "Air Draw - AI Pictionary",
+  tagline: "Draw in the air with your fingertips and let a machine learning model recognize your sketches.",
+  year: "2026",
+  description: [
+    "Air Draw is a webcam-based drawing application that lets users draw on a virtual canvas using hand gestures, without touching a screen or using a physical drawing device. Built with MediaPipe hand tracking, it detects fingertip movements in real time and translates them into smooth strokes on the canvas.",
+    "Developed an interactive drawing interface using JavaScript, HTML Canvas, and MediaPipe Tasks Vision to track hand landmarks and recognize drawing gestures. Implemented stroke smoothing, movement thresholds, and adjustable line width to create a more natural drawing experience.",
+    "Built a machine learning pipeline to recognize hand-drawn shapes using a custom convolutional neural network (CNN). Trained the model on an eight-class drawing dataset and achieved approximately 94% validation accuracy during model evaluation.",
+    "Integrated a Python FastAPI backend to receive canvas drawings and return predictions from the trained model. Connected the frontend and backend through a prediction API, enabling users to submit sketches and receive shape-recognition results.",
+    "Developed the project as an interactive AI Pictionary experience with drawing challenges involving shapes and everyday objects. Designed the system to run locally, combining real-time computer vision, browser-based drawing, and machine learning inference.",
+    "Implemented drawing input validation to handle blank canvas submissions and prevent empty sketches from being processed as valid predictions."
+  ],
+  tech: ["JavaScript", "HTML Canvas", "MediaPipe Tasks Vision", "Python", "FastAPI", "NumPy", "TensorFlow/Keras", "Convolutional Neural Networks (CNN)", "Computer Vision", "Machine Learning"],
+  liveUrl: "",
+  githubUrl: "https://github.com/Alexclansy24/air-draw",
+},
+{
+  name: "E-Commerce Food Delivery Web App",
+  tagline: "A full-stack food ordering platform with secure payments, order management, and delivery tracking.",
+  year: "2026",
+  description: [
+    "Developed a full-stack food delivery web application that enables customers to browse food items, place orders, make online payments, and track order progress. Structured the project into three independent applications: a customer-facing frontend, an Express.js backend API, and an admin dashboard for managing food items and orders.",
+    "Built the customer frontend using React, Vite, and React Router to support page navigation and food ordering workflows. Integrated Axios for API communication and implemented a responsive interface for browsing food items, managing orders, and accessing customer account features.",
+    "Developed REST APIs using Node.js and Express.js, with MongoDB and Mongoose for data persistence. Implemented user authentication using JSON Web Tokens (JWT), password hashing with bcrypt, and input validation with Validator to support secure account access and authenticated requests.",
+    "Integrated Stripe to support online payment processing and connect payment workflows with order placement. Used environment variables to manage sensitive configuration and implemented backend middleware and API communication to support the application's core operations.",
+    "Created a separate admin dashboard using React and Vite to manage food listings and orders. Integrated the backend using Axios and added toast notifications with React Toastify to provide feedback for administrative actions and API operations.",
+    "Designed the order management workflow to support order creation, order listing, and delivery-status updates. The platform is intended to provide customers with visibility into their order progress while enabling administrators to manage incoming orders and update their status."
+  ],
+  tech: ["React", "Vite", "JavaScript", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt", "Stripe", "Axios", "React Router", "Multer", "CORS", "dotenv", "Validator"],
+  liveUrl: "https://food-delivery-frontend-ihvh.onrender.com/",
+  githubUrl: "https://github.com/Alexclansy24/ecom",
+},
   
 ];
 
