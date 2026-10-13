@@ -201,8 +201,8 @@ export const projects: Project[] = [
     "Integrated calendar libraries, reusable React components, and responsive layouts to create consistent dashboard experiences across different screen sizes. Prioritized visual hierarchy, component reusability, and maintainable frontend architecture."
   ],
   tech: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS", "React Big Calendar", "React Calendar", "Recharts", "React Hook Form", "Zod", "Moment.js"],
-  liveUrl: "",
-  githubUrl: "",
+  liveUrl: "https://school-dashboard-ochre.vercel.app/",
+  githubUrl: "https://github.com/Alexclansy24/school-dashboard",
 },
   
 ];
